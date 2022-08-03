@@ -1,0 +1,166 @@
+*{
+	font-family: 'DM Sans', sans-serif;
+}
+.nav-link{
+	color: black !important;
+}
+
+.cont-cent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#herocont1 > h1{
+	font-weight: 600;
+	color: black;
+}
+
+#herocont1{
+	margin-top: 6rem;
+}
+
+.adv{
+	position: relative;
+	margin-top: -1rem;
+}
+.adl{
+	position: relative;
+	margin-top: -2.5rem;
+	display: flex;
+	justify-content: flex-end;
+	font-weight: 300;
+	text-decoration: none;
+	color: #000;
+}
+
+.hltr{
+	text-decoration: underline blue;
+}
+#loginpage{
+	margin-top: 10rem;
+	width: 30vw;
+}
+#searchbox{
+	width: 20rem;
+	height: 2.6rem;
+	background: #F2F8FF;
+	border: none;
+	color: black;
+	box-shadow: none;
+}
+#explorenav{
+	display: flex;
+	text-decoration: none;
+	list-style: none;
+}
+#explorenav > li:first-child{
+
+	margin-left: -2rem !important;
+}
+#explorenav > li{
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
+}
+.spc{
+	margin: 0.5rem;
+}
+.iconlib{
+	height: 3rem;
+}
+
+#socials > li{
+	margin: 0.5rem;
+	padding: 0.4rem;
+}
+#loader{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: black no-repeat;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#forgotform{
+	display: none;
+}
+.colored-toast.swal2-icon-success {
+  background-color: #a5dc86 !important;
+}
+
+@media only screen and (min-width: 1200px) {
+  .mrg{
+	margin-left: 12rem;
+}
+#heroimg{
+	margin-top:4rem;
+}
+#heroimg2{
+	width: 24rem;
+}
+#onetimebox{
+	width: 50vw;
+}
+.styimg{
+	width:30rem;
+	margin-bottom: 1rem;
+}
+.pitchimg{
+	display: none;
+}
+}
+
+
+@media only screen and (max-width: 767px){
+	#searchbox{
+	width: 14rem;
+	height: 2.6rem;
+	background: #F2F8FF;
+	border: none;
+	color: black;
+	box-shadow: none;
+  }
+  .pitchimg{
+  	display: block;
+  }
+  #heroimg{
+    width: 15rem;
+   }
+   #heroimg2{
+    width: 15rem;
+   }
+   #loginpage{
+			margin-top: 10rem;
+			width: 90vw;
+		}    
+		#onetimebox{
+			width: 90vw;
+		}
+		.styimg{
+			width:22rem;
+			margin-bottom: 1rem;
+			display: none;
+		}
+		.fixed-action-btn {
+    position: fixed;
+    right: 0.1875rem !important;
+    bottom: 0.1875rem !important;
+    z-index: 1030;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: column-reverse nowrap;
+    flex-flow: column-reverse nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.9375rem 20px 20px;
+    margin-bottom: 0;
+    height: auto;
+    overflow: hidden;
+}
+}

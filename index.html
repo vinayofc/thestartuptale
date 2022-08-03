@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;subset=latin&amp;display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<title></title>
+</head>
+<body onload="rem();">
+<div id="loader">
+      <span>
+      <img src="i/loader.svg" style="height:8rem;"><br>
+      <h6 style="color: white;text-align: center;">Loading...</h6>
+      </span>
+    </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-light" style="box-shadow:none !important;">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img
+        src="i/logo.svg"
+        alt="MDB Logo"
+        loading="lazy"
+        style="margin-top: -1px;height: 2rem;"
+      />
+    </a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #000;border-radius: 25px;height: 2.5rem;box-shadow: none !important;color: #fff;">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mrg">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Startup Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pitch Decks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PlayBooks</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <a class="btn btn-link px-3 me-2" href="auth/index.html">
+          Login <i class="fas fa-lock"></i>
+        </a>
+        <a class="btn btn-dark me-3" href="auth/register.html">
+          Subscribe <i class="far fa-star"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md cont-cent">
+      <div id="herocont1">
+      <h1 class="h1st">Explore <span class="hltr">100's</span> of <span id="chgtxt">Success <br>Stories 🚀 , Pitch Decks & PlayBooks.</span></h1>
+      <p>Find Success Stories & Pitch Decks of Big Companies to build your <b>Startup</b></p>
+      <div class="row"><div class="col"><input type="text" class="form-control" id="searchbox" aria-describedby="emailHelp" placeholder="Find anything"></div><div class="col"><button type="button" class="btn btn-dark" style="height: 2.6rem;">Search <i class="fas fa-search"></i></button></div></div>
+      <br>
+      <h5><strong>Find Something New</strong>✨</h5>
+      <ul id="explorenav">
+        <li>Top Startup Stories <i class='bx bx-link-external' ></i></li>
+        <li>Unicorn Startups <i class='bx bx-link-external' ></i></li>
+      </ul>
+      <ul id="explorenav" style="margin-top: -0.6rem;">
+        <li>Top Pitch Decks <i class='bx bx-link-external' ></i></li>
+        <li>Leaderboards <i class='bx bx-link-external' ></i></li>
+      </ul>
+      </div>
+    </div>
+    <div class="col-md cont-cent">
+            <img src="i/hero.png" id="heroimg">
+    </div>
+  </div>
+</div>
+<section>
+	<div class="container">
+		<div class="card">
+		  <div class="card-body">
+		  	<div class="row">
+			<div class="col-md">
+				<img src="i/icon.svg" style="height:4rem;">
+				<h1 class="text-black" style="margin-top: 2rem;">Read Successful <span class="hltr">Startup</span> Stories</h1>
+				<h6>100's of Success Stories</h6>
+				<p>Learn From Big Companies & Startups to grow your business and Startup. Read a Detailed info about any Startup with its Marketing & Secret Techniques to grow.<br>
+					<button type="button" class="btn btn-dark mt-3">Explore Now <i class="fas fa-angle-right"></i></button></p>
+			</div>
+			<div class="col-md">
+				<h5 class="text-black">Popular Stories 🔥</h5>
+				<div class="row">
+					<div class="col-md">
+						<div class="card spc">
+						  <img src="i/s1.png" class="card-img-top" alt="Fissure in Sandstone"/>
+						  <div class="card-body">
+						    <h5 class="card-title">Story #1</h5>
+						    <span class="badge badge-dark">Startup</span> <span class="badge badge-dark">2019</span> <span class="badge badge-dark">Unicorn</span>
+						    <hr>
+						    <a href="story.html" class="btn btn-primary">Read Story</a>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card spc">
+						  <img src="i/s2.png" class="card-img-top" alt="Fissure in Sandstone"/>
+						  <div class="card-body">
+						    <h5 class="card-title">Story #1</h5>
+						    <span class="badge badge-dark">Startup</span> <span class="badge badge-dark">2019</span> <span class="badge badge-dark">Unicorn</span>
+						    <hr>
+						    <a href="story.html" class="btn btn-primary">Read Story</a>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		  </div>
+		</div>
+		
+	</div>
+</section>
+<br>
+<section>
+	<div class="container">
+		<div class="card">
+		  <div class="card-body">
+		  	<div class="row">
+			<div class="col-md">
+				<img src="i/icon.svg" style="height:4rem;">
+				<h1 class="text-black" style="margin-top: 2rem;">Explore <span class="hltr">Pitch Decks</span></h1>
+				<h6>100+ Pitch Decks</h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ante consequat, facilisis felis ut, luctus dui. In sagittis vehicula dui. Donec laoreet vel sem sit amet aliquet. Aenean sit amet malesuada ante, sed pharetra est. In scelerisque nisl ac eros suscipit vulputate. Maecenas luctus lacus id finibus porta. In vestibulum sem eget eleifend luctus.<br>
+					<button type="button" class="btn btn-dark mt-3">Explore Now <i class="fas fa-angle-right"></i></button></p>
+			</div>
+			<div class="col-md">
+				<h5 class="text-black">Latest Pitch Decks</h5>
+				<div class="row">
+					<div class="col-md">
+						<div class="card spc">
+						  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+						  <div class="card-body">
+						    <h5 class="card-title">Pitch #1</h5>
+						    <span class="badge badge-dark">Seed</span> <span class="badge badge-dark">1 Biilion $</span> <span class="badge badge-dark">2019</span>
+						    <hr>
+						    <a href="#!" class="btn btn-primary">Read Story</a>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card spc">
+						  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+						  <div class="card-body">
+						    <h5 class="card-title">Pitch #1</h5>
+						    <span class="badge badge-dark">Series C</span> <span class="badge badge-dark">1 Biilion $</span> <span class="badge badge-dark">2022</span>
+						    <hr>
+						    <a href="#!" class="btn btn-primary">Read Story</a>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+</section>
+<br>
+<div class="container cont-cent">
+	<a href="#!" class="btn btn-dark btn-lg">Open ToolBook <i class="fas fa-external-link-alt"></i></a>
+</div>
+<section>
+	<div class="container">
+		<h4 class="text-center text-black mt-5">Curated For Startups & Entrepreneurs ⭐</h4>
+		<br>
+		<div class="row mt">
+			<div class="col-md">
+				<div class="card spc">
+				  <div class="card-body bg-dark text-white cont-cent">
+				  	<img src="i/unicorn.svg" class="iconlib">
+				  <h4>200+ Startup Stories</h4>
+				  <p class="text-center">Read About Successful Startups <br>& Their Marketing Tactics</p>
+				   </div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card spc">
+				  <div class="card-body bg-dark text-white cont-cent">
+				  	<img src="i/decks.svg" class="iconlib">
+				  <h4>100+ Pitch Decks</h4>
+				  <p class="text-center">Explore Pitch Decks<br>of Big Startups</p>
+				   </div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card spc">
+				  <div class="card-body bg-dark text-white cont-cent">
+				  	<img src="i/bolt.svg" class="iconlib">
+				  <h4>50+ Startup PlayBooks</h4>
+				  <p class="text-center">Curated List of Secret<br>PlayBooks</p>
+				   </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section style="margin-top: 3rem;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md cont-cent">
+				<img src="i/hero2.svg" id="heroimg2">
+			</div>
+			<div class="col-md text-black">
+				<h3 style="margin-top:2rem;">About Startup Tale 🚀</h3>
+      <p>The Startup Tale is a Product which is Designed for Startups & Entrepreneurs.<br>We Have a Huge Collection of Startup Stories , Pitch Decks , Startup Tools & Ebooks.</p>
+      <h6>Our Features</h6>
+      <ul style="list-style: none;">
+        <li> <i class='bx bx-chevrons-right' ></i> High Quality Premium Content</li>
+        <li> <i class='bx bx-chevrons-right' ></i> Made for Startup & Entrepreneurs</li>
+        <li> <i class='bx bx-chevrons-right' ></i> Marketing Infomatics</li>
+        <li> <i class='bx bx-chevrons-right' ></i> Access to Tools</li>
+        <li> <i class='bx bx-chevrons-right' ></i> Big Library of Pitch Decks</li>
+      </ul>
+      <h6>Join Startup Tale Social Community</h6>
+      <ul style="list-style: none;display: flex;" id="socials">
+        <li><i class='bx bxl-telegram' ></i></li>
+        <li><i class='bx bxl-facebook' ></i></li>
+        <li><i class='bx bxl-twitter' ></i></li>
+        <li><i class='bx bxl-instagram' ></i></li>
+        <li><i class='bx bxl-discord' ></i></li>
+      </ul>
+  </div>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-white">
+  <!-- Section: Social media -->
+  <br>
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <img src="i/logowht.svg" style="height:2.5rem;">
+          <p>
+            One Stop Place For Startup & Entrepreneurs.
+          </p>
+          <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Navigation
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Stories</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pitch Decks</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">PlayBooks</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful Links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Privacy Policy</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Terms & Conditions</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Developer</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">HelpDesk</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Sitemap</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Noida , Uttar Pradesh</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            hello@thestartuptale.com
+          </p>
+          <p><i class="fab fa-whatsapp me-3"></i> +1 571 710 5163</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://thestartuptale.com/">thestartuptale.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="js/mdb.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

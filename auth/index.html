@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/mdb.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;subset=latin&amp;display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<title></title>
+</head>
+<body onload="rem();" style="background-color:#f5f6fa;">
+<div id="loader">
+      <span>
+      <img src="i/loader.svg" style="height:8rem;"><br>
+      <h6 style="color: white;text-align: center;">Loading...</h6>
+      </span>
+    </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-light" style="box-shadow:none !important;">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img
+        src="../i/logo.svg"
+        alt="MDB Logo"
+        loading="lazy"
+        style="margin-top: -1px;height: 2rem;"
+      />
+    </a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #000;border-radius: 25px;height: 2.5rem;box-shadow: none !important;color: #fff;">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mrg">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Startup Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pitch Decks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PlayBooks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <a class="btn btn-link px-3 me-2" href="index.html">
+          Login <i class="fas fa-lock"></i>
+        </a>
+        <a class="btn btn-dark me-3" href="register.html">
+          Subscribe <i class="far fa-star"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+<section>
+	<div class="container cont-cent">
+		<div class="card" id="loginpage">
+	  <div class="card-body">
+	  	<img src="../i/icon.svg" style="height: 3rem;">
+	    
+	    <form id="loginform">
+	    	<h3 class="card-title text-black mt-2">Login To Startup Tale</h3>
+	    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <!-- Email input -->
+				  <div class="form-outline mb-4">
+				    <input type="email" id="form1Example1" class="form-control" />
+				    <label class="form-label" for="form1Example1">Email address</label>
+				  </div>
+
+				  <!-- Password input -->
+				  <div class="form-outline mb-4">
+				    <input type="password" id="form1Example2" class="form-control" />
+				    <label class="form-label" for="form1Example2">Password</label>
+				  </div>
+
+				  <!-- 2 column grid layout for inline styling -->
+				  <div class="row mb-4">
+				    <div class="col d-flex justify-content-center">
+				      <!-- Checkbox -->
+				      <div class="form-check">
+				        <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+				        <label class="form-check-label" for="form1Example3"> Remember me </label>
+				      </div>
+				    </div>
+
+				    <div class="col">
+				      <!-- Simple link -->
+				      <a href="#Forgot-Password" onclick="forgotclick()">Forgot password?</a>
+				    </div>
+				  </div>
+
+				  <!-- Submit button -->
+				  <button type="submit" class="btn btn-primary">Sign in</button>
+				</form>
+				<form id="forgotform">
+				  <h3 class="card-title text-black mt-2">Forgot Password</h3>
+	    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <div class="form-outline mb-4">
+				    <input type="email" id="form1Example1" class="form-control" />
+				    <label class="form-label" for="form1Example1">Email address</label>
+				  </div>
+				  <button type="submit" class="btn btn-primary">Reset Password</button>
+				  <button type="submit" class="btn btn-link" onclick="loginclick()">Login</button>
+				</form>
+	    
+	  </div>
+	</div>
+	</div>
+</section>
+
+
+<script src="../js/mdb.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</body>
+</html>

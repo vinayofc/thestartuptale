@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/mdb.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;subset=latin&amp;display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<title></title>
+</head>
+<body onload="rem();" style="background-color:#f5f6fa;">
+<div id="loader">
+      <span>
+      <img src="../i/loader.svg" style="height:8rem;"><br>
+      <h6 style="color: white;text-align: center;">Loading...</h6>
+      </span>
+    </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-light" style="box-shadow:none !important;">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img
+        src="../i/logo.svg"
+        alt="MDB Logo"
+        loading="lazy"
+        style="margin-top: -1px;height: 2rem;"
+      />
+    </a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #000;border-radius: 25px;height: 2.5rem;box-shadow: none !important;color: #fff;">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mrg">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Startup Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pitch Decks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PlayBooks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <a class="btn btn-link px-3 me-2" href="index.html">
+          Login <i class="fas fa-lock"></i>
+        </a>
+        <a class="btn btn-dark me-3" href="register.html">
+          Subscribe <i class="far fa-star"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+<section>
+	<div class="container cont-cent">
+		<div class="card" id="loginpage">
+	  <div class="card-body">
+	  	<img src="../i/icon.svg" style="height: 3rem;">
+	    
+	    <!-- Form wizrd -->
+            <div>
+              <!-- Steps -->
+              <ul class="stepper" id="stepper-form-example" data-mdb-stepper-linear="true">
+                <form class="needs-validation stepper-form">
+                  <!-- First step -->
+                  <li class="stepper-step stepper-active">
+                    <div class="stepper-head">
+                      <span class="stepper-head-icon">1</span>
+                      <span class="stepper-head-text">Basic</span>
+                    </div>
+                    <div class="stepper-content py-3">
+                      <div class="form-outline mb-4">
+                        <input type="text" id="stepper-form-first-name" class="form-control" />
+                        <label class="form-label" for="stepper-form-first-name">First name<small class="text-muted"> (required)</small></label>
+                        <div class="invalid-feedback">Invalid Name</div>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="text" id="stepper-form-last-name" class="form-control" />
+                        <label class="form-label" for="stepper-form-last-name">Last name<small class="text-muted"> (required)</small></label>
+                        <div class="invalid-feedback">Invalid Name</div>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <input type="email" id="stepper-form-last-name" class="form-control"/>
+                        <label class="form-label" for="stepper-form-last-name">Email<small class="text-muted"> (required)</small></label>
+                        <div class="invalid-feedback">Invalid Email</div>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <input type="text" id="stepper-form-last-name" class="form-control" />
+                        <label class="form-label" for="stepper-form-last-name">Username<small class="text-muted"> (required)</small></label>
+                        <div class="invalid-feedback">Invalid Username</div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- First step -->
+
+                  <!-- Second step -->
+                  <li class="stepper-step">
+                    <div class="stepper-head">
+                      <span class="stepper-head-icon">2</span>
+                      <span class="stepper-head-text">Choose Plan</span>
+                    </div>
+                    <div class="stepper-content py-3">
+                      <div>
+                      	<label>Choose Plan</label>
+                       <select class="select" id="planinfo" onchange="planchange()">
+					            <option value="FREE">Forever Free Plan</option>
+					            <option value="STARTER">Starter Plan</option>
+					            <option value="PREMIUM">Premium Plan</option>
+					          </select>
+					          </div>
+					          <div>
+                      	<label>Billing Period</label>
+                       <select class="select" id="billtime" onchange="billtimechg()">
+					            <option value="1">1 Month</option>
+					            <option value="3">3 Month</option>
+					            <option value="6">6 Month</option>
+					            <option value="12">1 Year</option>
+					            <option value="99">One-Time</option>
+					          </select>
+					          </div>
+					          <div>
+					          	<h5 class="mt-2">Plan Confirmation</h5>
+					          	<h6 id="plandetails">Forever Free Plan is Selected</h6>
+					          	<span class="badge badge-primary" id="billingcycle">1 Month</span>
+					          </div>
+                    </div>
+                  </li>
+                  <!-- Second step -->
+
+                  <!-- Third step -->
+                  <li class="stepper-step">
+                    <div class="stepper-head">
+                      <span class="stepper-head-icon">3</span>
+                      <span class="stepper-head-text">Finalize</span>
+                    </div>
+                    <div class="stepper-content py-3">
+                      <div class="form-outline mb-4">
+                        <textarea class="form-control" id="form6Example7" rows="4" disabled>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna odio, ullamcorper quis arcu non, varius semper urna. Nulla molestie, lectus ut faucibus posuere, augue ex hendrerit justo, eget semper eros leo sed ex. In nunc velit, faucibus non sapien vitae, commodo finibus nisi. Nulla sagittis, nisl sed volutpat eleifend, ante dolor sagittis purus, vel porttitor libero tellus a quam. Mauris vel vehicula dolor. Integer ac augue fermentum, lobortis purus et, sollicitudin est. Pellentesque vitae est velit. Nulla a vestibulum purus, ut vestibulum ante. Phasellus erat enim, interdum sit amet auctor sit amet, faucibus ac leo.
+
+Sed malesuada ornare augue finibus mollis. Quisque et sodales mi. Pellentesque ultricies lorem convallis, interdum tortor ac, finibus ipsum. Aliquam in dui eget nibh dignissim fermentum vel ac enim. Praesent non fringilla urna, nec vehicula lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in arcu augue. Vivamus non maximus dui. In eget velit finibus eros placerat malesuada. Integer ullamcorper pulvinar arcu, in blandit nisl venenatis eu. Fusce hendrerit, justo id efficitur accumsan, elit nibh faucibus lorem, nec fringilla ante elit vel felis. Nulla vel pulvinar augue. Phasellus ultricies tempor justo at eleifend.
+
+In nec vehicula est, nec gravida ligula. Nulla vitae auctor lectus, at placerat ligula. Sed in faucibus nunc. Donec finibus sem non dictum egestas. Quisque suscipit tortor a sagittis tempor. Nunc elementum id sem et fermentum. Donec sit amet quam sollicitudin, dictum dolor sed, pretium elit.
+
+Sed in risus vitae libero viverra laoreet ut ut metus. Ut nec tortor ac urna elementum imperdiet. Pellentesque mattis id felis non dictum. Proin lobortis at enim eu lacinia. Quisque hendrerit orci a vehicula viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus pharetra diam in congue mollis. Duis vel leo feugiat, suscipit turpis nec, gravida sem. Etiam consequat sagittis odio. Vivamus porta eu ante sed faucibus. Nunc dictum purus augue, non volutpat nibh maximus vel. Quisque mollis vel ligula ut pharetra.
+
+Sed aliquam enim vitae vulputate pulvinar. Sed a tincidunt nisi. Fusce fringilla, nisl nec finibus auctor, tellus magna rhoncus odio, sit amet tristique leo tellus porta libero. Nulla mollis in mauris in commodo. Nulla nec tempor augue. Pellentesque laoreet purus metus, at volutpat ex efficitur sed. Pellentesque urna dolor, viverra eget dui nec, iaculis vestibulum erat. In auctor volutpat diam sit amet accumsan. Nunc non nisi facilisis, auctor lacus convallis, gravida ipsum. Duis dolor mi, mollis ac diam at, luctus pretium mauris. Sed nec mi sem.</textarea>
+                        <label class="form-label" for="form6Example7">Term & Conditions</label>
+                      </div>
+
+                      <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked/>
+                        <label class="form-check-label" for="form6Example8">I Agree to Terms & Conditions</label>
+                      </div>
+
+                      <a type="submit" class="btn btn-success btn-block mb-4" id="clickbtn" onclick="createacc()">Create Account</a>
+                      <button class="btn btn-success btn-block mb-4" type="submit" style="display:none;" id="accbtn" disabled>
+										  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+										  Creating Account
+										</button>
+                    </div>
+                  </li>
+                  <!-- Third step -->
+
+                </form>
+              </ul>
+              <!-- Steps -->
+
+              <!-- Buttons -->
+              <div class="d-flex justify-content-center px-3">
+                <button id="form-example-prev-step" class="btn btn-primary w-100 me-2">Previous step</button>
+                <button id="form-example-next-step" class="btn btn-primary w-100">Next step</button>
+              </div>
+              <!-- Buttons -->
+            </div>
+            <!-- Form wizrd -->
+	    
+	  </div>
+	</div>
+	</div>
+</section>
+
+<div
+              class="alert fade"
+              id="alert-success"
+              role="alert"
+              data-mdb-color="success"
+              data-mdb-position="top-right"
+              data-mdb-stacking="true"
+              data-mdb-width="535px"
+              data-mdb-width="535px"
+              data-mdb-append-to-body="true"
+              data-mdb-hidden="true"
+              data-mdb-autohide="true"
+              data-mdb-delay="2000"
+            >
+              A simple success alert with
+              <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+<script src="../js/mdb.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</body>
+</html>

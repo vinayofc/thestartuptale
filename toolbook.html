@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;subset=latin&amp;display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<title></title>
+</head>
+<body onload="rem();">
+<div id="loader">
+      <span>
+      <img src="i/loader.svg" style="height:8rem;"><br>
+      <h6 style="color: white;text-align: center;">Loading...</h6>
+      </span>
+    </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-light" style="box-shadow:none !important;">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img
+        src="i/logo.svg"
+        alt="MDB Logo"
+        loading="lazy"
+        style="margin-top: -1px;height: 2rem;"
+      />
+    </a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #000;border-radius: 25px;height: 2.5rem;box-shadow: none !important;color: #fff;">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mrg">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Startup Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pitch Decks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PlayBooks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <a class="btn btn-link px-3 me-2" href="auth/index.html">
+          Login <i class="fas fa-lock"></i>
+        </a>
+        <a class="btn btn-dark me-3" href="auth/register.html">
+          Subscribe <i class="far fa-star"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+<section>
+  <div class="container" style="margin-top:6rem;">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">ToolBook</li>
+  </ol>
+</nav>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2 class="text-black">Find Perfect Tools with ToolBook.</h2>
+    <hr>
+    <div class="row">
+      <div class="col-md">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#aio"
+        aria-expanded="false"
+        aria-controls="flush-collapseOne"
+      >
+        All In One
+      </button>
+    </h2>
+    <div
+      id="aio"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingOne"
+      data-mdb-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        <ul class="list-unstyled">
+          <li><strong><a href="https://workflowy.com/">Workflowly<i class='bx bx-link-external'></i></a>A simpler way to organize your...</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#flush-collapseTwo"
+        aria-expanded="false"
+        aria-controls="flush-collapseTwo"
+      >
+        Accordion Item #2
+      </button>
+    </h2>
+    <div
+      id="flush-collapseTwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingTwo"
+      data-mdb-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+        heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#flush-collapseThree"
+        aria-expanded="false"
+        aria-controls="flush-collapseThree"
+      >
+        Accordion Item #3
+      </button>
+    </h2>
+    <div
+      id="flush-collapseThree"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingThree"
+      data-mdb-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+        heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-md">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#flush-collapseOne"
+        aria-expanded="false"
+        aria-controls="flush-collapseOne"
+      >
+        Accordion Item #1
+      </button>
+    </h2>
+    <div
+      id="flush-collapseOne"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingOne"
+      data-mdb-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+        heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#flush-collapseTwo"
+        aria-expanded="false"
+        aria-controls="flush-collapseTwo"
+      >
+        Accordion Item #2
+      </button>
+    </h2>
+    <div
+      id="flush-collapseTwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingTwo"
+      data-mdb-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+        heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#flush-collapseThree"
+        aria-expanded="false"
+        aria-controls="flush-collapseThree"
+      >
+        Accordion Item #3
+      </button>
+    </h2>
+    <div
+      id="flush-collapseThree"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingThree"
+      data-mdb-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+        heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-white">
+  <!-- Section: Social media -->
+  <br>
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <img src="i/logowht.svg" style="height:2.5rem;">
+          <p>
+            One Stop Place For Startup & Entrepreneurs.
+          </p>
+          <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Navigation
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Stories</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pitch Decks</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">PlayBooks</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful Links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Privacy Policy</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Terms & Conditions</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Developer</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">HelpDesk</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Sitemap</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Noida , Uttar Pradesh</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            hello@thestartuptale.com
+          </p>
+          <p><i class="fab fa-whatsapp me-3"></i> +1 571 710 5163</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://thestartuptale.com/">thestartuptale.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+<script src="js/mdb.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

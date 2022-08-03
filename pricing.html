@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;subset=latin&amp;display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<title></title>
+</head>
+<body onload="rem();" style="background-color:#f9f9f9;">
+<div id="loader">
+      <span>
+      <img src="i/loader.svg" style="height:8rem;"><br>
+      <h6 style="color: white;text-align: center;">Loading...</h6>
+      </span>
+    </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-light" style="box-shadow:none !important;">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img
+        src="i/logo.svg"
+        alt="MDB Logo"
+        loading="lazy"
+        style="margin-top: -1px;height: 2rem;"
+      />
+    </a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #000;border-radius: 25px;height: 2.5rem;box-shadow: none !important;color: #fff;">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mrg">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Startup Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pitch Decks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PlayBooks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <a class="btn btn-link px-3 me-2" href="auth/index.html">
+          Login <i class="fas fa-lock"></i>
+        </a>
+        <a class="btn btn-dark me-3" href="auth/register.html">
+          Subscribe <i class="far fa-star"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+
+<section style="margin-top:5rem;">
+	<div class="container cont-cent text-black">
+		<h1>Pricing Plans</h1>
+		<span class="mb-2">
+		<button type="button" class="btn btn-dark">Monthly</button>
+		<button type="button" class="btn btn-dark">Yearly</button>
+		</span>
+		<select class="select">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+     </select>
+	</div>
+	<div class="row gap-2 ms-4 me-4 mt-4">
+			<div class="col-md cont-cent">
+				<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Forever Free</h5>
+    <p class="card-text">Start Learning from big companies for free. Explore Collection of Stories, Pitch Decks & Tools.</p>
+    <h3 class="card-title">0$</h3>
+    <p style="font-size: 14px;">*Billed Monthly</p>
+    <hr>
+    <ul class="list-unstyled">
+    	<li><i class="fas fa-arrow-right"></i> Access to Stories</li>
+    	<li><i class="fas fa-arrow-right"></i> 20+ Pitch Decks</li>
+    	<li><i class="fas fa-arrow-right"></i> Free PlayBooks</li>
+    	<li><i class="fas fa-arrow-right"></i> Free ToolBook</li>
+    	<li><i class="fas fa-times"></i> Premium Tools</li>
+    	<li><i class="fas fa-times"></i> No Ads</li>
+    </ul>
+    <button type="button" class="btn btn-dark">Get Started <i class="fas fa-chevron-right"></i></button>
+  </div>
+</div>
+			</div>
+			<div class="col-md cont-cent">
+				<div class="card bg-dark text-white">
+  <div class="card-body">
+    <h5 class="card-title">Starter Plan  <span class="badge badge-light">Popluar</span></h5>
+    <p class="card-text">Speed Up your Startup & Business. Learn From Big Startups & Fortune Companies.</p>
+    <h3 class="card-title">19$</h3>
+    <p style="font-size: 14px;">*Billed Monthly</p>
+    <hr>
+    <ul class="list-unstyled">
+    	<li><i class="fas fa-arrow-right"></i> Access to Premium Stories</li>
+    	<li><i class="fas fa-arrow-right"></i> 50+ Pitch Decks</li>
+    	<li><i class="fas fa-arrow-right"></i> Premium PlayBooks</li>
+    	<li><i class="fas fa-arrow-right"></i> Premium ToolBook</li>
+    	<li><i class="fas fa-arrow-right"></i> Premium Tools</li>
+    	<li><i class="fas fa-arrow-right"></i> Ad Free</li>
+    </ul>
+    <button type="button" class="btn btn-light">Get Started <i class="fas fa-chevron-right"></i></button>
+  </div>
+</div>
+			</div>
+			<div class="col-md cont-cent">
+				<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Premium <span class="badge badge-dark">Trending</span></h5>
+    <p class="card-text">Boost Your Company & Startup at 10x Speed with Startup Tale.</p>
+    <h3 class="card-title">29$</h3>
+    <p style="font-size: 14px;">*Billed Monthly</p>
+    <hr>
+    <ul class="list-unstyled">
+    	<li><i class="fas fa-arrow-right"></i> Access to all Stories + Marketing Secrets</li>
+    	<li><i class="fas fa-arrow-right"></i> All Pitch Decks</li>
+    	<li><i class="fas fa-arrow-right"></i> All PlayBooks</li>
+    	<li><i class="fas fa-arrow-right"></i> Premium ToolBook</li>
+    	<li><i class="fas fa-arrow-right"></i> Premium Tools</li>
+    	<li><i class="fas fa-arrow-right"></i> Ads Free</li>
+    </ul>
+    <button type="button" class="btn btn-dark">Get Started <i class="fas fa-chevron-right"></i></button>
+  </div>
+</div>
+			</div>
+
+
+			<div class="row mt-4">
+				<div class="col cont-cent">
+					<img src="i/illus.svg" style="height:26rem;">
+				</div>
+				<div class="col-md cont-cent">
+					<div class="card bg-dark text-white gap-2 mb-2" id="onetimebox">
+  <div class="card-body">
+    <h5 class="card-title">One Time</h5>
+    <p class="card-text">Access to Everything with One-Time Plan. No Renewals Needed</p>
+    <h3 class="card-title">249$</h3>
+    <p style="font-size: 14px;">*Billed One-Time</p>
+    <hr>
+    <ul class="list-unstyled">
+    	<li><i class="fas fa-arrow-right"></i> Access to all Stories + Marketing Secrets</li>
+    	<li><i class="fas fa-arrow-right"></i> All Pitch Decks</li>
+    	<li><i class="fas fa-arrow-right"></i> All PlayBooks</li>
+    	<li><i class="fas fa-arrow-right"></i> Premium ToolBook</li>
+    	<li><i class="fas fa-arrow-right"></i> Premium Tools</li>
+    	<li><i class="fas fa-arrow-right"></i> Ads Free</li>
+    </ul>
+    <button type="button" class="btn btn-outline-light">Get Started with One-Time <i class="fas fa-chevron-right"></i></button>
+  </div>
+</div>
+				</div>
+				
+			</div>
+		</div>
+</section>
+<section>
+	<div class="container">
+		<h2 class="text-center text-black mt-4">Get More with Subscription 😎</h2>
+		<div class="row mb-4 gap-2">
+			<div class="col-md">
+				<div class="card">
+  <div class="card-body bg-dark text-white cont-cent">
+  	<img src="i/premium.svg" style="height:2.5rem;">
+    <h5 class="card-title mt-2">High Quality Premium Content</h5>
+    <p class="card-text text-center">Explore 100's of Stories , Pitch Deck and PlayBook with High Quality Premium Contents.</p>
+  </div>
+</div>
+			</div>
+			<div class="col-md">
+<div class="card">
+  <div class="card-body bg-dark text-white cont-cent">
+    <img src="i/noads.svg" style="height:2.5rem;">
+    <h5 class="card-title mt-2">No Ads</h5>
+    <p class="card-text text-center">100% Ads Free Content. Surf Content without paywalls.</p>
+  </div>
+</div>
+			</div>
+			<div class="col-md">
+				<div class="card">
+  <div class="card-body bg-dark text-white cont-cent">
+    <img src="i/tool.svg" style="height:2.5rem;">
+    <h5 class="card-title mt-2">Tools Library</h5>
+    <p class="card-text text-center">Explore Thousand of Useful Tools for your Startup & Business.</p>
+  </div>
+</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container cont-cent">
+		<h2 class="text-center text-black">Having Questions? 🤔</h2>
+		<span class="mb-4">
+			<button type="button" class="btn btn-dark">See FAQs <i class="fas fa-external-link-alt"></i></button>
+			<button type="button" class="btn btn-dark">Contact Help & Support <i class="fas fa-external-link-alt"></i></button>
+		</span>
+	</div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-white">
+  <!-- Section: Social media -->
+  <br>
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <img src="i/logowht.svg" style="height:2.5rem;">
+          <p>
+            One Stop Place For Startup & Entrepreneurs.
+          </p>
+          <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Navigation
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Stories</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pitch Decks</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">PlayBooks</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful Links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Privacy Policy</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Terms & Conditions</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Developer</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">HelpDesk</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Sitemap</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Noida , Uttar Pradesh</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            hello@thestartuptale.com
+          </p>
+          <p><i class="fab fa-whatsapp me-3"></i> +1 571 710 5163</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://thestartuptale.com/">thestartuptale.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<script src="js/mdb.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
